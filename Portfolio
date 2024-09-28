@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #2c3e50;
+        }
+        nav a {
+            color: white;
+            padding: 0.75rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        .about, .resume, .contact {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .about h2, .resume h2, .contact h2 {
+            font-size: 2.5rem;
+            color: #34495e;
+        }
+        .about p, .resume p, .contact p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            width: 30%;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .project-card h3 {
+            font-size: 1.5rem;
+            color: #2980b9;
+            margin-bottom: 0.5rem;
+        }
+        .project-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .resume {
+            background-color: #ecf0f1;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .resume h3 {
+            color: #2980b9;
+            margin-bottom: 1rem;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+            padding: 1.5rem;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact form input, .contact form textarea {
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .contact form button {
+            padding: 1rem;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .contact form button:hover {
+            background-color: #1abc9c;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #34495e;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <div class="container">
+        <section id="about" class="about">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3dvcmxkZmFjZXNsYWJfM2RfcmVuZGVyX2NoYXJhY3Rlcl9vZl9hX2xpdHRsZV9naXJsX3dlYXJpbmdfZ2xhc19hODY5OGRmYS0wNTQwLTRlMjktOTc1Zi02NzE4YjcyN2M4N2NfMS5wbmc.png" alt="Profile Picture">
+            <h2>Hi, I'm K Tanushree</h2>
+            <p>Welcome to my portfolio! As a dedicated Mathematics Honours student with a minor in Computer Science,
+                 I am passionate about exploring the intricate relationships between mathematical theory and 
+                 computational applications. My academic journey has equipped me with a strong foundation in 
+                 analytical thinking, problem-solving, and algorithmic design. I thrive in environments where
+                  I can apply mathematical concepts to real-world challenges, leveraging my knowledge of 
+                  programming languages and data structures to develop innovative solutions. This portfolio 
+                  showcases my academic achievements, projects, and personal explorations within the realms of mathematics 
+                and computer science, reflecting my commitment to continuous learning and intellectual growth  </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <!-- Project 1: 7 Wonders of the World Landing Page -->
+                <div class="project-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/New7Wonders.jpg/300px-New7Wonders.jpg" alt="7 Wonders of the World Project Image">
+
+                    <h3>7 Wonders of the World Landing Page</h3>
+                    <p>This project is a visually stunning landing page dedicated to the 7 Wonders of the World. It showcases each wonder with descriptions and images, designed with responsive elements for seamless viewing on any device. Built with HTML and CSS, this project highlights my attention to detail and love for history.
+                        Link to the project <a href="https://github.com/tanu0910/Encryptrix--Task-1">Landing page</a>
+                    </p>
+                </div>
+
+                <!-- Project 2: Tribute Page -->
+                <div class="project-card">
+                    <img src="https://cdn.britannica.com/99/171099-004-88680C9D.jpg" alt="Tribute Page Project Image">
+                    <h3>Tribute Page</h3>
+                    <p>A simple yet elegant tribute page created using HTML and CSS, dedicated to a notable individual. The page includes a clean layout, a featured image, and a timeline of the person's life and achievements. This project demonstrates my ability to structure content and design accessible web pages.
+                        Link to the project<a href="https://github.com/tanu0910/Encryptix_-.4">Tribute page</a>
+                    </p>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <h2>Resume</h2>
+            <div>
+                <h3>Here is the link to my resume</h3>
+                <a href="c:\Users\DELL\Desktop\cv3.pdf">Resume</a>
+                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 K Tanushree. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
